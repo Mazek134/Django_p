@@ -1,0 +1,257 @@
+
+body {
+    padding-left: 15px;
+}
+
+#icons{
+padding-left: 172px;
+font-size:18px;
+
+}
+
+
+#q{
+padding-left: 180px;
+padding-top: 10px;
+height:90px;
+font-family: Bradley Hand, cursive;
+font-size: 25px;
+background-color: lightblue;
+}
+
+
+
+h1 a, h2 a {
+
+font-family: Bradley Hand, cursive;
+}
+
+.checkHeader{
+display:table-cell;
+vertical-align:middle;
+text-align:center;
+width:700px;
+height:100px;
+background-color: orange;
+font-size: 30px;
+font-family: Bradley Hand, cursive;
+font-weight: bold;
+color: black;
+
+}
+
+.przyciski{
+background-color: orange;
+color: black;
+height:130px;
+font-size: 15px;
+}
+
+.btn-warning{
+width:100px;
+float:right;
+}
+#ddone{
+width:100px;
+float:right;
+
+}
+
+#nowytask {
+width:100px;
+float:center;
+}
+
+
+
+
+.cont{
+background-color: gray;
+height: 400px;
+font-size: 20px;
+}
+
+#stat1{
+width: 100px;
+float:right;
+
+}
+
+#stat2{
+width: 100px;
+float:right;
+
+}
+
+.changeB{
+width:50px;
+float:right;
+
+}
+
+#zmien-status{
+width:50px;
+height:25px;
+background-color:red;
+
+font-size: 10px;
+}
+
+#ttask {
+background-color: green
+
+}
+
+#ftask {
+background-color: gray;
+}
+
+.komunikat1{
+color:white;
+text-align:center;
+width:250px;
+height:30px;
+font-weight: bold;
+background-color:#99FF99;
+}
+
+.komunikat2{
+color:white;
+text-align:center;
+width:250px;
+height:30px;
+font-weight:bold;
+background-color:#FF9999;
+}
+
+
+
+.header2 {
+background-color:orange;
+text-align:center;
+font-family:Impact, fantasy;
+}
+
+
+.przyciski2{
+height:35px;
+color:red;
+padding-top:10px;
+
+}
+
+#przycisk1 {
+
+width:100px;
+float:left;
+
+
+}
+
+#t1 {
+color:black;
+font-weight: bold;
+}
+
+#przycisk2 {
+margin-left:50px;
+width:100px;
+float:left;
+
+}
+#t2 {
+color:black;
+font-weight: bold;
+}
+
+#przycisk3 {
+margin-left:50px;
+width:122px;
+float:left;
+
+
+}
+
+#t3 {
+color:black;
+font-weight: bold;
+
+}
+
+#btn3{
+width:150px;
+}
+
+#przycisk4 {
+margin-left:50px;
+width:100px;
+float:left;
+}
+
+#t4 {
+color:black;
+font-weight: bold;
+}
+
+.dodaj_nowe {
+margin-top:10px;
+height:50px;
+
+}
+
+.formularz{
+margin-top:20px;
+width:100%;
+height:50px;
+
+}
+
+#nowytask{
+width:150px;
+float:right;
+
+}
+
+
+
+
+
+.zadanka {
+margin-top:30px;
+height:300px;
+font-size:20px;
+font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+
+
+.liniazadania{
+
+height:35px;
+
+}
+
+.tresczadania {
+
+width:600px;
+height:100%;
+float:left;
+}
+
+.statuszadania{
+
+width:110px;
+height:100%;
+float:right;
+;
+}
+.przycisk_zmien{
+color:black;
+height:100%;
+widht:30px;
+float:right;
+}
+
+.zrobione {
+text-decoration:line-through;
+}

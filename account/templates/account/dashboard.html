@@ -1,0 +1,7 @@
+{% extends "blog/base.html" %}
+{% block title %}Panel główny{% endblock %}
+{% block content %}
+ <h1>Panel główny</h1>
+ <p>Witaj w panelu głównym.</p>
+ <a href="{% url 'logout' %}">Wyloguj</a>
+{% endblock %}

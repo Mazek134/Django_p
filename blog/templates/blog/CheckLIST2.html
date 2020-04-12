@@ -1,0 +1,106 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="header2">
+<h1 > To Do list
+</h1>
+</div>
+
+<div class="przyciski2">
+
+    <div id="przycisk1">
+    <button class="btn btn-warning" >
+        <a href=" {% url 'delete_all2' %} "id="t1">
+        delete all
+            </a>
+    </button>
+    </div>
+
+    <div id="przycisk2">
+    <button class="btn btn-warning">
+        <a href=" {% url 'delete_done2' %}" id="t2" >
+        delete done
+            </a>
+    </button>
+    </div>
+
+    <div id="przycisk3">
+
+        <button class="btn btn-warning"id="btn3">
+        <a href=" {% url 'mark_all_as_done2' %}" id="t2" >
+        mark all as done
+            </a>
+    </button>
+
+    </div>
+
+    <div id="przycisk4">
+    <button class="btn btn-warning">
+        <a href="" id="t4">
+            numero4
+        </a>
+    </button>
+    </div>
+
+
+
+</div>
+
+<div class="dodaj_nowe">
+    <div class="formularz">
+        <form method="POST" class="post-form">{% csrf_token %}
+
+        {{ tForm.task }}
+
+            <div id="nowytask">
+        <button type="submit" class="btn btn-primary btn-lg">
+        Add task
+        </button>
+                </div>
+    </form>
+    </div>
+
+</div>
+
+
+<div class="zadanka">
+{% for tas in tasks %}
+<div class="liniazadania">
+
+<div class="tresczadania">
+
+
+    {% if tas.status %}
+    <div class="zrobione">
+        {{tas.task}}
+    </div>
+    {% else %}
+
+     <div class="nie_zrobione">
+        {{tas.task}}
+    </div>
+    {% endif %}
+
+</div>
+
+    <div class="statuszadania">
+        {% if tas.status %}
+        <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+        {% else %}
+        <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+        {% endif %}
+        <div class="przycisk_zmien">
+     <button type="submit" class="btn btn-info" id="zmien-status2">
+                   <a href="{% url 'change_status2' i=tas.pk %}">
+                change
+                       </a>
+                </button>
+            </div>
+    </div>
+
+
+</div>
+{% endfor %}
+</div>
+
+{% endblock %}

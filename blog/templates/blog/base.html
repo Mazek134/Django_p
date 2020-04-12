@@ -1,0 +1,48 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Django  blog</title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    <div class="page-header1" id="q">
+
+        <h1  id = "b"> <a href="/">Django Simple </a> </h1>
+
+        <br>
+        witaj {{user}}
+    </div>
+     <div id="icons">
+
+         <a href="{% url 'checkLIST2' %}" class="top-menu">&nbsp&nbsp checklistaTEST &nbsp<span class="glyphicon glyphicon-send"></span></a>
+        {% if user.is_authenticated %}
+
+        <a href="{% url 'post_new' %}" class="top-menu">&nbsp&nbspadd new post &nbsp<span class="glyphicon glyphicon-plus"></span></a>
+        <a href="{% url 'logout' %}" class="top-menu">&nbsp&nbsplogout &nbsp<span class="glyphicon glyphicon-user"></span></a>
+        {% else%}
+        <a href="{% url 'login' %}" class="top-menu">&nbsp&nbsplogin &nbsp<span class="glyphicon glyphicon-user"></span></a>
+         <a href="{% url 'register' %}" class="top-menu">&nbsp&nbspRegistration &nbsp<span class="glyphicon glyphicon-asterisk"></span></a>
+        {% endif %}
+
+
+
+        </div>
+
+    <div class="content container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <br>
+                <br>
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
