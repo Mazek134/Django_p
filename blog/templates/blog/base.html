@@ -18,7 +18,8 @@
     </div>
      <div id="icons">
 
-         <a href="{% url 'checkLIST2' %}" class="top-menu">&nbsp&nbsp checklistaTEST &nbsp<span class="glyphicon glyphicon-send"></span></a>
+         <a href="{% url 'checkLIST2' %}" class="top-menu">&nbsp&nbsp checklista &nbsp<span class="glyphicon glyphicon-send"></span></a>
+
         {% if user.is_authenticated %}
 
         <a href="{% url 'post_new' %}" class="top-menu">&nbsp&nbspadd new post &nbsp<span class="glyphicon glyphicon-plus"></span></a>
@@ -33,6 +34,7 @@
         </div>
 
     <div class="content container">
+
 
         <div class="row">
             <div class="col-md-8">

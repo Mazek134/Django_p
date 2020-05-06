@@ -27,6 +27,10 @@ def register(request):
  return render(request,'registration/register.html',{'form':form})
 
 
+def mozenowelog(request):
+
+
+ return render(request,'registration/mozenowelog.html')
 
 
 
